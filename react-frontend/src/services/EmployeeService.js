@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const EMPLOYEE_API_BASE_URL = "http://localhost:8080/api/v1/employees";
-const EMPLOYEE_API_BASE_URL1 = "http://localhost:8080/api/v1/products/search?query=mou";
+const EMPLOYEE_API_BASE_URL1 = "http://localhost:8080/api/v1/products/search?query";
 
 
 class EmployeeService {
     
-    getProducts(){
-        return axios.get(EMPLOYEE_API_BASE_URL1);
+    getProducts(searchItem){
+        return axios.get(EMPLOYEE_API_BASE_URL1 + '=' + searchItem);
     }
 
     getEmployees(){
