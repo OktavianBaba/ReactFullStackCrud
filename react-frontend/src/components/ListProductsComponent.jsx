@@ -30,7 +30,6 @@ class ListProductsComponent extends Component {
         
         return (
             <div>
-                
                 <button onClick = { () => this.getProducts('mou')} className="btn btn-info" style={{marginLeft: "10px"}}>Mouse Search</button>
                 <button onClick = { () => this.getProducts('key')} className="btn btn-info" style={{marginLeft: "10px"}}>Keyboard Search</button>
                 <button onClick = { () => this.getProducts('lap')} className="btn btn-info" style={{marginLeft: "10px"}}>Laptop Search</button>
